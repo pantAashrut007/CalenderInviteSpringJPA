@@ -90,6 +90,7 @@ public class CreateMeetingController {
                 }
             }
         }
+        //found in between
         if(count==0){
             if(dateEndTime.isBefore(dateStartTime) || modifiedCurrentDate.isBefore(dateStartTime) || modifiedCurrentDate.isBefore(dateEndTime)){
                 model.addAttribute("error","End time cannot be before Start Time");
